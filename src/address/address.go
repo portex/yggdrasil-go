@@ -16,8 +16,8 @@ type Subnet [8]byte
 // The current implementation requires this to be a multiple of 8 bits + 7 bits.
 // The 8th bit of the last byte is used to signal nodes (0) or /64 prefixes (1).
 // Nodes that configure this differently will be unable to communicate with each other using IP packets, though routing and the DHT machinery *should* still work.
-func GetPrefix() [1]byte {
-	return [...]byte{0x02}
+func GetPrefix() [2]byte {
+    return [...]byte{0x77, 0x00}
 }
 
 // IsValid returns true if an address falls within the range used by nodes in the network.
