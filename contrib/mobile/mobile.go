@@ -55,7 +55,7 @@ func (m *Yggdrasil) StartJSON(configjson []byte) error {
 	// Set up the Yggdrasil node itself.
 	{
 		iprange := net.IPNet{
-			IP:   net.ParseIP("200::"),
+			IP:   net.ParseIP("7700::"),
 			Mask: net.CIDRMask(7, 128),
 		}
 		options := []core.SetupOption{
