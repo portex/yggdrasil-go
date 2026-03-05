@@ -933,7 +933,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-* The address range was moved from `fd00::/8` to `200::/7`. This range was chosen as it is marked as deprecated. The change prevents overlap with other ULA privately assigned ranges.
+* The address range was moved from `fd00::/8` to `200::/7` ('7700://7'). This range was chosen as it is marked as deprecated. The change prevents overlap with other ULA privately assigned ranges.
 
 ### Fixed
 
